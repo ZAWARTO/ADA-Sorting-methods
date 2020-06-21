@@ -33,10 +33,10 @@ Bubble sort can also be used efficiently on a list of any length that is nearly 
 - insertion_sort
 - bubble_sort 
 - selection_sort 
-- moveright ----------> Moves the desired position to the right
-- searchinsertion ----> Find the position to insert an element
-- searchmin ----------> Find the minimum element
-- exchange -----------> Exchange two items
+- moveright ----------> Moves the desired position to the right.
+- searchinsertion ----> Find the position to insert an element.
+- searchmin ----------> Find the minimum element.
+- exchange -----------> Exchange two items of the same vector.
 
 ## Attention
 The files must be in the same folder for it to work properly, if the folder has more than 16 characters or spaces in the name it may not work
