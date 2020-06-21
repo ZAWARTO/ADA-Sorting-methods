@@ -33,7 +33,7 @@ Bubble sort can also be used efficiently on a list of any length that is nearly 
 - insertion_sort
 - bubble_sort 
 - selection_sort 
-### Functions
+##### Functions
 - moveright ----------> Moves the desired position to the right.
 - searchinsertion ----> Find the position to insert an element.
 - searchmin ----------> Find the minimum element.
