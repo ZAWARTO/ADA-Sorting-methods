@@ -13,7 +13,7 @@ Insertion sort is a simple sorting algorithm that is relatively efficient for sm
 
 It works by taking elements from the list one by one and inserting them in their correct position into a new sorted list similar to how we put money in our wallet. 
 
-In arrays, the new list and the remaining elements can share the array's space, but insertion is expensive, requiring shifting all following elements over by one. Shellsort (see below) is a variant of insertion sort that is more efficient for larger lists.
+In arrays, the new list and the remaining elements can share the array's space, but insertion is expensive, requiring shifting all following elements over by one. Shellsort is a variant of insertion sort that is more efficient for larger lists.
  
 ## Selection sort
 Selection sort is an in-place comparison sort. It has O(n2) complexity, making it inefficient on large lists, and generally performs worse than the similar insertion sort. 
