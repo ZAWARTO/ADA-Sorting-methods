@@ -6,6 +6,6 @@ procedure moveright (
       Pos : in     Integer        ) is
 
 BEGIN
-   L.numbers(pos+1..L.Count+1):= L.numbers(pos..L.Cont);
+   L.numbers(pos+1..L.Count+1):= L.numbers(pos..L.Count);
 
 end moveright;
