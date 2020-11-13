@@ -10,7 +10,7 @@ procedure bubble_sort (
 BEGIN
    Count:= 1;
 
-   LOOP EXIT WHEN Cont > L.Count - 1;
+   LOOP EXIT WHEN Count > L.Count - 1;
       Pos:= 1;
       LOOP EXIT WHEN Pos > L.Count - 1;
 
