@@ -1,38 +1,37 @@
-WITH Ada.integer_Text_IO, ada.Text_IO; USE Ada.integer_Text_IO, ada.Text_IO;
+with Ada.integer_Text_IO, ada.Text_IO; 
+use Ada.integer_Text_IO, ada.Text_IO;
 
-PROCEDURE previousSecond IS
+procedure previousSecond is
    hh: INTEGER;
    mm: INTEGER;
    ss: INTEGER;
-BEGIN
+begin
    Put("hh");
    Put_Line("");
-   GET(hh);
+   Get(hh);
    Put("mm");
    Put_Line("");
-   GET(mm);
+   Get(mm);
    Put("ss");
    Put_Line("");
-   GET(ss);
-   IF hh>=00 AND hh<=23 AND mm>=00 AND ss<=59 THEN
+   Get(ss);
+   if hh>=00 and hh<=23 and mm>=00 and ss<=59 then
       ss:= ss-1;
-      IF ss=-1 THEN
+      if ss=-1 then
          ss:= 59;
          mm:= mm-1;
-         IF mm=-1 THEN
+         if mm=-1 then
             mm:=59;
             hh:= hh - 1;
-            IF hh=-1 THEN
+            if hh=-1 then
                hh:= 23;
-            END IF;
-         END IF;
-      END IF;
-   END IF;
-
+            end if;
+         end if;
+      end if;
+   end if;
    Put(hh);
    Put_Line("");
    Put(mm);
    Put_Line("");
    Put(ss);
-
-END previousSecond;
+end previousSecond;
