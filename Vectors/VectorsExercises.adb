@@ -1,3 +1,6 @@
+with VectorsExercises;
+use VectorsExercises;
+
 package body VectorsExercises is
    ----------------
    -- Last_Even  --
@@ -158,4 +161,5 @@ package body VectorsExercises is
          end if;
       end loop;
    end Rot13;
+   
 end VectorsExercises;
