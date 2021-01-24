@@ -1,37 +1,37 @@
-WITH Ada.integer_Text_IO, ada.Text_IO; USE Ada.integer_Text_IO, ada.Text_IO;
+with Ada.integer_Text_IO, ada.Text_IO; 
+use Ada.integer_Text_IO, ada.Text_IO;
 
-PROCEDURE work IS
-   hh: INTEGER;
-   mm: INTEGER;
-   ss: INTEGER;
+procedure work is
+   hh: Integer;
+   mm: Integer;
+   ss: Integer;
    worktime: Integer;
    starttime: Integer;
    aviabletime: Integer;
    pendingtime: Integer;
-   finaltime: integer;
-BEGIN
+   finaltime: Integer;
+begin
    Put("hour");
    Put_Line("");
-   GET(hh);
+   Get(hh);
    Put("minutes");
    Put_Line("");
-   GET(mm);
+   Get(mm);
    Put("seconds");
    Put_Line("");
-   GET(ss);
+   Get(ss);
    Put("work time in seconds");
    Put_Line("");
-   GET(worktime);     
-
-   IF hh>=08 AND hh<16 AND mm>=00 AND ss<=59 AND worktime<=14400 THEN
+   Get(worktime);     
+   if hh>=08 and hh<16 and mm>=00 and ss<=59 and worktime<=14400 then
       starttime:= hh*3600 + mm*60 + ss;
       aviabletime:= 57600 - starttime;
-      IF worktime > aviabletime THEN
+      if worktime > aviabletime then
          pendingtime:= worktime - aviabletime;
          finaltime:= 28800 + pendingtime;
-      ELSE
+      else
          finaltime:= starttime + work;
-      END IF;
+      end if;
       hh := finaltime/3600;
       finaltime:= finaltime mod 3600;
       mm:= finaltime/60;
@@ -41,5 +41,5 @@ BEGIN
       Put(mm);
       Put_Line("");
       Put(ss);
-   END IF;
-END work;
+   end if;
+end work;
