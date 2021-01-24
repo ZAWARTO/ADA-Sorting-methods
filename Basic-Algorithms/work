@@ -1,27 +1,27 @@
 WITH Ada.integer_Text_IO, ada.Text_IO; USE Ada.integer_Text_IO, ada.Text_IO;
 
-PROCEDURE tarea IS
+PROCEDURE work IS
    hh: INTEGER;
    mm: INTEGER;
    ss: INTEGER;
-   work: Integer;
+   worktime: Integer;
    starttime: Integer;
    aviabletime: Integer;
    pendingtime: Integer;
    finaltime: integer;
 BEGIN
-   Put("hh");
+   Put("hour");
    Put_Line("");
    GET(hh);
-   Put("mm");
+   Put("minutes");
    Put_Line("");
    GET(mm);
-   Put("ss");
+   Put("seconds");
    Put_Line("");
    GET(ss);
-   Put("time");
+   Put("work time in seconds");
    Put_Line("");
-   GET(worktime);     --work time in seconds
+   GET(worktime);     
 
    IF hh>=08 AND hh<16 AND mm>=00 AND ss<=59 AND worktime<=14400 THEN
       starttime:= hh*3600 + mm*60 + ss;
