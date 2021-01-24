@@ -1,40 +1,41 @@
-WITH Ada.integer_Text_IO, ada.Text_IO; USE Ada.integer_Text_IO, ada.Text_IO;
+with Ada.integer_Text_IO, ada.Text_IO; 
+use Ada.integer_Text_IO, ada.Text_IO;
 
-PROCEDURE previousDay IS
+procedure previousDay is
    dd: INTEGER;
    mm: INTEGER;
    aaaa: INTEGER;
-BEGIN
+begin
    Put("day");
    Put_Line("");
-   GET(dd);
+   Get(dd);
    Put("month");
    Put_Line("");
-   GET(mm);
+   Get(mm);
    Put("year");
    Put_Line("");
-   GET(aaaa);
-   IF dd = 1 and (mm = 2 or mm = 4 or mm = 6 or mm = 9 or mm = 11) THEN
+   Get(aaaa);
+   if dd = 1 and (mm = 2 or mm = 4 or mm = 6 or mm = 9 or mm = 11) then
       mm:= mm - 1;
       dd := 31;
-   ELSIF dd = 1 AND (mm = 5 OR mm = 7 OR mm = 8 OR mm = 10 OR mm = 12) THEN
+   elsif dd = 1 AND (mm = 5 or mm = 7 or mm = 8 or mm = 10 or mm = 12) then
       mm:= Mm - 1;
       dd:= 30;
-   ELSIF Dd = 1 AND Mm = 1 THEN
+   elsif Dd = 1 AND Mm = 1 then
       dd:= 31;
       mm:= 12;
       aaaa:= aaaa-1;
-   ELSIF dd = 1 AND mm = 3 THEN
+   elsif dd = 1 AND mm = 3 then
       Mm:= 2;
-      IF (aaaa mod 4 = 0 OR aaaa mod 400 = 0) AND aaaa mod 100 /= 0 THEN
+      if (aaaa mod 4 = 0 or aaaa mod 400 = 0) and aaaa mod 100 /= 0 then
          dd:= 29;
-      ELSE
+      else
          dd:= 28;
-      END IF;
-   ELSE
+      end if;
+   else
       dd:= dd-1;
-   END IF;
+   end if;
 
    Put("The previous day was: ");Put(dd);Put("/");Put(mm);Put("/");Put(aaaa);
 
-END previousDay;
+end previousDay;
