@@ -1,14 +1,15 @@
-WITH Ada.integer_Text_IO, ada.Text_IO; USE Ada.integer_Text_IO, ada.Text_IO;
+with Ada.integer_Text_IO, ada.Text_IO; 
+use Ada.integer_Text_IO, ada.Text_IO;
 
-PROCEDURE secondsToHours IS
-   N:INTEGER;
-   hh: INTEGER;
-   mm: INTEGER;
-   ss: INTEGER;
-BEGIN
+procedure secondsToHours is
+   N:Integer;
+   hh: Integer;
+   mm: Integer;
+   ss: Integer;
+begin
    Put("Enter the seconds");
    Put_Line("");
-   GET(N);
+   Get(N);
    hh := N/3600;
    N:= N mod 3600;
    mm:= N/60;
@@ -18,5 +19,4 @@ BEGIN
    Put(mm);
    Put_Line("");
    Put(ss);
-
 END secondsToHours;
