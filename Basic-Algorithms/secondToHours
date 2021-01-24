@@ -1,0 +1,22 @@
+WITH Ada.integer_Text_IO, ada.Text_IO; USE Ada.integer_Text_IO, ada.Text_IO;
+
+PROCEDURE secondsToHours IS
+   N:INTEGER;
+   hh: INTEGER;
+   min: INTEGER;
+   s: INTEGER;
+BEGIN
+   Put("Enter the seconds");
+   Put_Line("");
+   GET(N);
+   hh := N/3600;
+   N:= N mod 3600;
+   min:= N/60;
+   s:= N mod 60;
+   Put(hh);
+   Put_Line("");
+   Put(min);
+   Put_Line("");
+   Put(s);
+
+END conversorHoras;
