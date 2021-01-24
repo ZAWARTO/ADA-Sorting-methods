@@ -23,7 +23,7 @@ package VectorsExercises2 is
    -- pre: V contains at least one element (V'Length >= 1)
    -- the elements do not follow any order. the element being searched does not have to be in V
    -- post: position where N is and, if not, Integer'Last
-   function Equals(F1, F2: in T_Fecha) return Boolean;
+   function Equals(F1, F2: in T_Date) return Boolean;
    -- F1 and F2 are two valid dates
    -- post: result = true <--> F1=F2
    function ToDegrees(Degrees: in T_Degrees) return Float;
