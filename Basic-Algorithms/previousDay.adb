@@ -35,7 +35,5 @@ begin
    else
       dd:= dd-1;
    end if;
-
    Put("The previous day was: ");Put(dd);Put("/");Put(mm);Put("/");Put(aaaa);
-
 end previousDay;
