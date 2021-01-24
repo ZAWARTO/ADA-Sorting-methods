@@ -3,20 +3,20 @@ WITH Ada.integer_Text_IO, ada.Text_IO; USE Ada.integer_Text_IO, ada.Text_IO;
 PROCEDURE secondsToHours IS
    N:INTEGER;
    hh: INTEGER;
-   min: INTEGER;
-   s: INTEGER;
+   mm: INTEGER;
+   ss: INTEGER;
 BEGIN
    Put("Enter the seconds");
    Put_Line("");
    GET(N);
    hh := N/3600;
    N:= N mod 3600;
-   min:= N/60;
-   s:= N mod 60;
+   mm:= N/60;
+   ss:= N mod 60;
    Put(hh);
    Put_Line("");
-   Put(min);
+   Put(mm);
    Put_Line("");
-   Put(s);
+   Put(ss);
 
-END conversorHoras;
+END secondsToHours;
