@@ -4,7 +4,7 @@ package DynamicLists is
    Type T_List_Dynamic is access T_Node_Integers;
    type T_Node_Integers is record
       Info: Integer;
-      Sig: T_List_Dynamic;
+      Next: T_List_Dynamic;
    end record;
 
    function IsInList(L: in T_List_Dynamic; N: in Integer) return Boolean;
