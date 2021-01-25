@@ -16,7 +16,7 @@ package VectorsExercises is
    --Pre: V has ten integers.
    --post: result = true <--> V ordered increasing or V ordered decreasing.
 
-   procedure Separate_digits (Num: In Natural; V: out T_Vector10; odd: out Natural);
+   procedure Separate_digits(Num: In Natural; V: out T_Vector10; odd: out Natural);
    --post: V contains the digits of Num (filling the left side with 0s up to 10 digits).
    --      odd contains how many odd digits Num has.
 
@@ -24,7 +24,7 @@ package VectorsExercises is
    --Pre: V has ten integers representing bits.
    --post: result = decimal number representing the 10 bits of V.
 
-   procedure Rot13 (noEncrypted: in STRING; Encrypted: out STRING);
+   procedure Rot13(noEncrypted: in STRING; Encrypted: out STRING);
    --Pre: noEncrypted has ten integers.
    --Post: Encrypted contains the input string encrypted with the rot13 algorithm.
    
