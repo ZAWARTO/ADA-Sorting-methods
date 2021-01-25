@@ -21,7 +21,7 @@ package ListsExercises is
    -- pre: L contains at least one element (L.count >= 1)
    -- the elements do not follow any order. the element being searched does not have to be in L
    -- post: position where N is, and if not, Integer'Last
-   function Polar (C: in T_Complex_tri) return T_complejo_polar;
+   function Polar (C: in T_Complex_tri) return T_complex_polar;
    -- C is a complex in trigonometric form
    -- post: result = the complex number in polar form.
    function Equals(L1, L2: in T_List_Static) return Boolean;
